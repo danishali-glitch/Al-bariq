@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid nav">
+    <img class="mx-3" style="
+      max-width: 6%;
+      object-fit: contain;
+      aspect-ratio: 3/2;" src="assets/logo/AL-RAFAH_LOGO.png" alt="">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav text-center me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="open('/about-us')" routerLink="/about-us">About-Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Home Appliances Repaire
+          </a>
+
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" (click)="open('/Washing-Machine-Service')"><i class="fa-solid fa-shirt mx-2"></i> Washing Machine Repaire</a>
+            </li>
+            <li><a class="dropdown-item" (click)="open('/Cooking-Range-Service')"><i class="fa-solid fa-utensils mx-2"></i> Cooking Range Repaire</a>
+            </li>
+            <li><a class="dropdown-item" (click)="open('/Washer-Dryer-Service')"><i class="fa-solid fa-soap mx-2"></i> Washer Dryer Repaire</a></li>
+            <li><a class="dropdown-item" (click)="open('/Fridge-Service')"><i class="fa-solid fa-snowflake mx-2"></i> Fridge/Refrigerator
+                Repaire</a></li>
+            <li><a class="dropdown-item" (click)="open('/Dishwasher-Service')"><i class="fa-solid fa-bowl-rice mx-2"></i> Dishwasher Repaire</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Gym Equipment Repaire
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" (click)="open('/Trademill-Service')"><i class="fa-solid fa-dumbbell mx-2"></i> Trademill Repaire</a></li>
+            <li><a class="dropdown-item" (click)="open('/Exercise-Bike-Service')"><i class="fa-solid fa-person-biking mx-2"></i> Exercise Bike
+                Repaire</a></li>
+            <li><a class="dropdown-item" (click)="open('/Elliptical-Service')"><i class="fa-solid fa-person-hiking mx-2"></i> Ellipitical Repaire</a>
+            </li>
+          </ul>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" (click)="open('/contact-us')">Contact-Us</a>
+        </li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+<router-outlet />

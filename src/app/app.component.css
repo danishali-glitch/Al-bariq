@@ -1,0 +1,27 @@
+a {
+
+    font-weight: 400;
+}
+
+nav {
+    position: fixed;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.nav-item {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.card {
+    position: fixed;
+    background-color: aqua;
+
+    bottom: 5%;
+    max-width: 100%;
+    width: 85%;
+    justify-content: center;
+    z-index: 1;
+}
+

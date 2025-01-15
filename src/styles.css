@@ -1,0 +1,25 @@
+/* In styles.css or angular.json */
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('assets/image/3d-background-with-white-cubes.jpg');
+    /* Path relative to the `src` folder */
+    background-size: cover;
+    /* Scale the image to cover the entire viewport */
+    background-repeat: no-repeat;
+    /* Prevent repeating */
+    background-attachment: fixed;
+    /* Make the background fixed while scrolling */
+    background-position: center;
+    /* Center the image */
+    height: 100vh;
+    width: 100vw;
+}
+
+.gap {
+    height: 30px;
+}
+

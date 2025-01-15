@@ -1,0 +1,27 @@
+.img3 {
+    /* aspect-ratio: 3/1; */
+    object-fit: contain;
+    max-width: 100%;
+
+}
+
+footer {
+    background-color: rgba(16, 21, 24, 0.993);
+}
+
+.card {
+    background-color: transparent;
+    border: transparent;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #0a9c71;
+}

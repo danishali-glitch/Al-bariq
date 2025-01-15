@@ -1,0 +1,267 @@
+.img {
+    position: relative;
+    aspect-ratio: 3/3;
+    object-fit: contain;
+    max-width: 100%;
+    right: -120%;
+    opacity: 0%;
+    animation: moveAndRotate 2s ease-in-out forwards;
+}
+
+@keyframes moveAndRotate {
+    0% {
+        right: -120%;
+        /* Start off-screen to the right */
+
+    }
+
+    100% {
+        right: 0;
+        /* Final position on screen */
+        opacity: 100%;
+    }
+}
+
+h1 {
+    font-weight: 600;
+}
+
+.icon {
+    font-size: 54px;
+    color: #f09800;
+    /* Initial icon color */
+    transition: color 0.3s ease;
+    /* Smooth transition for icon color */
+}
+
+.card1 {
+    background-color: #fff;
+    /* Initial card background color */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for background color */
+}
+
+/* Hover effect for the card */
+.card1:hover {
+    background-color: #f09800;
+    /* Desired background color */
+    color: #fff;
+    /* Text color change for card content */
+}
+
+/* Hover effect for the icon inside the card */
+.card1:hover .icon {
+    color: #fff;
+    /* Change icon color to white */
+}
+
+.img1 {
+    opacity: 0;
+    max-width: 100%;
+    z-index: 4;
+    aspect-ratio: 3/3;
+    object-fit: contain;
+}
+
+.scrollimg {
+    opacity: 1;
+    z-index: 4;
+    transition: all ease 1s;
+}
+
+
+.rotate {
+    position: absolute;
+    top: 190%;
+    z-index: 0;
+    max-width: 30%;
+    animation: spin 25s linear infinite;
+
+
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+        /* Starting position */
+    }
+
+    to {
+        transform: rotate(360deg);
+        /* Full rotation */
+    }
+}
+
+.img2 {
+    position: relative;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    max-width: 100%;
+    left: -120%;
+}
+
+.card2 {
+    height: 50vh;
+}
+
+.img3 {
+    aspect-ratio: 3/3;
+    object-fit: contain;
+    max-width: 40%;
+    left: -25;
+
+}
+
+.slideInimg {
+    animation: slideIn 0.5s ease-in-out forwards;
+    display: block;
+}
+
+@keyframes slideIn {
+    0% {
+        left: -120%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+.slideOutimg {
+    animation: slideOut 0.7s ease-in-out forwards;
+    display: none;
+}
+
+@keyframes slideOut {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -120%;
+    }
+}
+
+
+
+.slideInimg1 {
+    animation: slideIn1 0.5s ease-in-out forwards;
+    display: block;
+}
+
+@keyframes slideIn1 {
+    0% {
+        right: -120%;
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+.slideOutimg1 {
+    animation: slideOut1 0.5s ease-in-out forwards;
+    display: none;
+}
+
+@keyframes slideOut1 {
+    0% {
+        right: 0;
+    }
+
+    100% {
+        right: -120%;
+    }
+}
+
+.card4a,
+.card4b,
+.card4c,
+.card4d {
+    background-color: #fff;
+    border: 1px solid #000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth hover effects */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+
+
+.card4icon {
+    font-size: 54px;
+    color: #f09800;
+    /* Initial icon color */
+    transition: color 0.3s ease;
+    /* Smooth transition for icon color */
+}
+
+
+/* Hover effect for the card */
+.card4a:hover,
+.card4b:hover,
+.card4c:hover,
+.card4d:hover {
+    background-color: #f09800;
+    /* Desired background color */
+    color: #fff;
+    /* Text color change for card content */
+}
+
+/* Hover effect for the icon inside the card */
+.card4a:hover .card4icon {
+    color: #fff;
+    /* Change icon color to white */
+}
+
+.card4b:hover .card4icon {
+    color: #fff;
+    /* Change icon color to white */
+}
+
+.card4c:hover .card4icon {
+    color: #fff;
+    /* Change icon color to white */
+}
+
+.card4d:hover .card4icon {
+    color: #fff;
+    /* Change icon color to white */
+}
+
+.img4 {
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    max-width: 100%;
+
+
+}
+
+.img5 {
+    aspect-ratio: 3/3;
+    object-fit: contain;
+    max-width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.img5:hover {
+    transform: translateY(-5px);
+}
+
+.landing {
+    /* aspect-ratio: 3/3; */
+    position: fixed;
+    width: 100%;
+    object-fit: contain;
+    opacity: 1;
+    z-index: -1;
+    filter: grayscale(50%);
+    transition: all 0.5s ease-in-out;
+}
+
+.landingblur {
+    width: 100%;
+    opacity: 0;
+    filter: grayscale(100%);
+}
